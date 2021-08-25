@@ -20,9 +20,9 @@ class App extends Component {
 };
 
 const mapStateToProps = state => ({ value: state.count.value })
-const mapDispatchTpProps = dispatch => ({
+const mapDispatchToProps = dispatch => ({
   increment: () => dispatch(increment()),
   decrement: () => dispatch(decrement()),
 })
 
-export default connect(mapStateToProps, mapDispatchTpProps)(App)
+export default connect(mapStateToProps, mapDispatchToProps)(App)
